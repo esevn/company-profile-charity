@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
 <body>
-    <section class="bg-[url('./../src/img/hero.jpg')] bg-cover object-cover">
+    <section class="bg-[url('./../src/img/hero.jpg')] md:bg-cover bg-center">
     <header class="flex justify-between items-center p-6 bg-transparent">
         <div class="flex items-center">
             <img alt="Charity logo" class="h-10 w-10 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/ZesqTX0S1uRXZabWgAa6mCCh2L6sUynceXX3lRJcW87XeGLnA.jpg" width="50"/>
@@ -23,7 +28,7 @@
         <nav class="hidden md:flex  space-x-6">
             <a class="text-white hover:text-green-600" href="#">Home</a>
             <a class="text-white hover:text-green-600" href="#">About Us</a>
-            <a class="text-white hover:text-green-600" href="#">Our Work</a>
+            <a class="text-white hover:text-green-600" href="#">Program</a>
             <a class="text-white hover:text-green-600" href="#">Stories</a>
             <a class="text-white hover:text-green-600" href="#">Contact</a>
         </nav>
@@ -40,7 +45,7 @@
             <nav class="flex flex-col space-y-4">
                 <a class="text-black hover:text-green-600" href="#">Home</a>
                 <a class="text-black hover:text-green-600" href="#">About Us</a>
-                <a class="text-black hover:text-green-600" href="#">Our Work</a>
+                <a class="text-black hover:text-green-600" href="#">Program</a>
                 <a class="text-black hover:text-green-600" href="#">Stories</a>
                 <a class="text-black hover:text-green-600" href="#">Contact</a>
                 <button class="bg-green-600 text-white font-bold py-2 px-4 rounded">Donate</button>
@@ -49,7 +54,7 @@
     </div>
     <main class="flex flex-col items-center justify-center h-screen text-center text-white">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Empowering Change, One Step at a Time</h1>
-        <p class="mt-4 text-xl">
+        <p class="mt-4 text-base">
             Every small act of kindness creates a ripple of positive change.
             <br/>
             Join us in making a difference lives together.
@@ -59,12 +64,43 @@
 </section>
 
 <!-- section kedua -->
-    <section class="w-full h-full mt-20">
+    <section class="w-full h-full bg-gradient-to-b from-green-300 to-white">
         <div class="container flex flex-col items-center justify-center m-auto px-4">
-        <h3 class="text-center text-3xl font-semibold">We do have a good share program for you</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <h3 class="text-center text-3xl lg:text-4xl font-semibold my-10 text-slate-900">We do have a good share <br> program for you</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <!-- card 1 -->
-             <div class="flex flex-col"></div>
+             <div class="flex flex-col border shadow-md ">
+                <img src="./src/img/children.jpg" alt="children" class="w-full h-52">
+                <div class="container px-2 py-3">
+                    <h1 class="text-2xl font-bold text-slate-900">Children</h1>
+                    <p class="text-sm">We will help you to give your fortune to help more people in the world  </p>
+                </div>
+                <a href=""><button class="px-2 mb-4 transition duration-100 ease-in-out hover:text-green-600 hover:scale-95 font-semibold">Learn more</button></a>
+             </div>
+             <!-- card 2 -->
+             <div class="flex flex-col border shadow-md ">
+                <img src="./src/img/colonized people.jpg" alt="the colonized" class="w-full h-52">
+                <div class="container px-2 py-3">
+                    <h1 class="text-2xl font-bold text-slate-900">The colonized</h1>
+                    <p class="text-sm">We will help you to give your fortune to help more people in the world  </p>
+                </div>
+             </div>
+             <!-- card 3 -->
+             <div class="flex flex-col border shadow-md ">
+                <img src="./src/img/education.jpg" alt="Education" class="w-full h-52">
+                <div class="container px-2 py-3">
+                    <h1 class="text-2xl font-bold text-slate-900">Education</h1>
+                    <p class="text-sm">We will help you to give your fortune to help more people in the world  </p>
+                </div>
+             </div>
+             <!-- card 4 -->
+             <div class="flex flex-col border shadow-md ">
+                <img src="./src/img/food.jpg" alt="food" class="w-full h-52">
+                <div class="container px-2 py-3">
+                    <h1 class="text-2xl font-bold text-slate-900">Food</h1>
+                    <p class="text-sm">We will help you to give your fortune to help more people in the world  </p>
+                </div>
+             </div>
         </div>
     </div>
     </section>
